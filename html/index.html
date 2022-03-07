@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The 2021 Frontend Developer Crash Course</title>
+        <link rel="stylesheet" href="./main.css">
+    </head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Remember<span>That</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="/images/bullet.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="/images/menu.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#">Contact</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+          
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1>A Task App That Doesn't Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try For Free</a>
+                    <a href="https://www.youtube.com/" target="_blank" class="watch-video-cta">
+                        <img src="./watch.png" alt="watch a video"> Watch a video
+                    </a>
+                </div>
+            </div>
+            <img src="./illustration.svg" class="hero-img" alt="illustration.svg">
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="container">
+            <ul>
+                <li>Unlimited Tasks</li>
+                <li>SMS Task Reminders</li>
+                <li>Confetti Explosions upon Task Completions</li>
+                <li>Social Media Annoucements</li>
+                <li>Real Time Collaboratins</li>
+                <li>Other awesome features</li>
+            </ul>
+
+            <img src="./holding-phone.jfif" alt="Man holding phone"  
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="./person.jfif" alt="person">
+                    <blockquote>"Don't judge a book by its cover</blockquote>
+                    <cite>- Geroge Harry</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="send message">
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script>
+
+        const mobilebtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobilebtnExit = document.getElementById('mobile-exit')
+
+        mobilebtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobilebtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+
+</html>
